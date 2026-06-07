@@ -44,7 +44,7 @@ export default function Quiz() {
       setQuestions(location.state.questions)
       setAnswers(location.state.questions.map(() => null))
     } else {
-      navigate('/')
+      navigate('/dashboard')
     }
   }, [location.state, navigate])
 
@@ -238,7 +238,7 @@ export default function Quiz() {
 
   const handleExit = () => {
     if (confirm('Are you sure you want to exit? Your progress will be lost.')) {
-      navigate('/')
+      navigate('/dashboard')
     }
   }
 

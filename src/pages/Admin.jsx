@@ -107,10 +107,10 @@ export default function Admin() {
       const result = await checkAdminStatus()
       setIsAdmin(result.is_admin)
       if (!result.is_admin) {
-        navigate('/')
+        navigate('/dashboard')
       }
     } catch (err) {
-      navigate('/')
+      navigate('/dashboard')
     } finally {
       setLoading(false)
     }
@@ -214,7 +214,7 @@ export default function Admin() {
             <span>Test Results</span>
           </button>
           <div className="admin-nav-divider" />
-          <button className="admin-nav-item" onClick={() => navigate('/')}>
+          <button className="admin-nav-item" onClick={() => navigate('/dashboard')}>
             {Icons.home}
             <span>Back to App</span>
           </button>

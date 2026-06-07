@@ -8,7 +8,7 @@ export default function Layout({ children }) {
     <div className="min-h-screen bg-gray-50">
       <header className="bg-white shadow-sm">
         <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
-          <Link to="/" className="text-xl font-bold text-gray-900">
+          <Link to="/dashboard" className="text-xl font-bold text-gray-900">
             K53 Quiz
           </Link>
           {user && (

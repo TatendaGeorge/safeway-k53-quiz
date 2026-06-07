@@ -57,7 +57,7 @@ export default function Results() {
           borderRadius: 'var(--radius)', marginBottom: '20px' }}>
           {error || 'Failed to load results'}
         </div>
-        <Link to="/">
+        <Link to="/dashboard">
           <Btn kind="ghost">Back to Home</Btn>
         </Link>
       </div>
@@ -198,10 +198,10 @@ export default function Results() {
       )}
 
       <div className="res-actions">
-        <Btn kind="ghost" onClick={() => navigate('/')}>
+        <Btn kind="ghost" onClick={() => navigate('/dashboard')}>
           <Icon name="home" s={16} />Home
         </Btn>
-        <Btn kind="primary" onClick={() => navigate('/')}>
+        <Btn kind="primary" onClick={() => navigate(mode === 'exam' ? '/exam' : '/practice')}>
           <Icon name="redo" s={16} />Try again
         </Btn>
       </div>
