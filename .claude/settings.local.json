@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "Bash(npm install:*)",
+      "Bash(npx vercel dev:*)",
+      "Bash(if [ ! -f /Users/tatendageorge/Downloads/k53-app/.env ])",
+      "Bash(then cp /Users/tatendageorge/Downloads/k53-app/.env.example /Users/tatendageorge/Downloads/k53-app/.env)",
+      "Bash(else echo \".env already exists\")",
+      "Bash(fi:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npx supabase --version)",
+      "Bash(npx supabase init:*)",
+      "Bash(npx supabase:*)",
+      "Bash(DB_PASSWORD='2023m1lani*21@' node:*)",
+      "Bash(curl:*)",
+      "Bash(nslookup db.ejmpamopyasfuxhbaffm.supabase.co)",
+      "Bash(nslookup:*)",
+      "Bash(pkill:*)",
+      "Bash(xargs kill -9)",
+      "Bash(DB_PASSWORD='2023m1lani*21@' node -e:*)",
+      "Bash(lsof:*)",
+      "Bash(node server.js:*)",
+      "Bash(npx vite:*)",
+      "Bash(git -C /Users/tatendageorge/Downloads/k53-app add -A)",
+      "Bash(git -C /Users/tatendageorge/Downloads/k53-app status)"
+    ]
+  }
+}
