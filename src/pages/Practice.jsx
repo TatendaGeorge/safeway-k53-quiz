@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { startQuiz, startFullQuiz } from '../lib/api'
 import { Btn, Icon, SECTION_COLOR } from '../components/ui'
 import Sidebar from '../components/Sidebar'
+import MobileNav from '../components/MobileNav'
 
 const SECTIONS = {
   road_signs: { id: 'road_signs', name: 'Road Signs', short: 'Signs', pass: 23, total: 30, questions: 212 },
@@ -63,6 +64,7 @@ export default function Practice() {
   return (
     <div className="sidebar-layout">
       <Sidebar />
+      <MobileNav />
       <main className="sidebar-main">
         <div className="sidebar-main-inner">
           <div className="page-content screen-anim">

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Icon, SECTION_COLOR } from '../components/ui'
 import Sidebar from '../components/Sidebar'
+import MobileNav from '../components/MobileNav'
 
 const SECTIONS = {
   road_signs: { id: 'road_signs', name: 'Road Signs', pass: 23, total: 30 },
@@ -13,6 +14,7 @@ export default function Home() {
   return (
     <div className="sidebar-layout">
       <Sidebar />
+      <MobileNav />
       <main className="sidebar-main">
         <div className="sidebar-main-inner">
           <div className="page-content screen-anim">
